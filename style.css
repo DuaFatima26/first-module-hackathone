@@ -1,0 +1,147 @@
+*{
+    font-family: "Space Grotesk", sans-serif !important;
+    scroll-behavior: smooth !important;
+}
+
+/* media queries for the cards sec */
+
+@media only screen and (max-width:992px) {
+.sec-card{
+    margin-top: 4%;
+}
+}
+
+/* styling for the faqs section */
+
+
+
+.faq-section {
+    /* background-color: #B9FF66; */
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+.faq-item {
+    background-color: #B9FF66;;
+    border: 1px solid black;
+    border-radius: 10px;
+    margin-bottom: 10px;
+    padding: 15px;
+    position: relative;
+}
+
+.faq-question {
+    font-size: 18px;
+    font-weight: bold;
+    cursor: pointer;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.faq-answer {
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.3s ease;
+    padding-top: 10px;
+}
+
+.faq-icon::before {
+    content: '+';
+    font-size: 20px;
+    color: #009688;
+    transition: transform 0.3s ease;
+}
+
+.faq-item input[type="checkbox"] {
+    display: none;
+}
+
+.faq-item input[type="checkbox"]:checked ~ .faq-answer {
+    min-height: 200px; 
+}
+
+.faq-item input[type="checkbox"]:checked ~ .faq-question .faq-icon::before {
+    content: '-';
+}
+
+@media only screen and (max-width:1005px){
+    .form-cont .form-image{
+display: none;
+    }
+}
+
+@media only screen and (max-width:980px){
+    .card{
+        margin-left: 25%;
+    }
+}
+
+@media only screen and (max-width:780px){
+    .card{
+        margin-left: 20%;
+    }
+}
+
+@media only screen and (max-width:720px){
+    .card{
+        margin-left: 10%;
+    }
+}
+
+@media only screen and (max-width:535px){
+    .card{
+        margin-left: 5%;
+    }
+}
+@media only screen and (max-width:496px){
+    .card-flex{
+        flex-direction: column !important;
+    }
+
+    .card-cont .card{
+        width: 20rem !important;
+    }
+
+    .card{
+        margin-left: 10%;
+    }
+}
+
+@media only screen and (max-width:400px){
+    .card{
+        margin-left: 5%;
+    }
+}
+
+@media only screen and (max-width:442px){
+    .message .textarea{
+        width: 300px !important;
+    }
+}
+@media only screen and (max-width:375px){
+    
+    .card-cont .card{
+        width: 15rem !important;
+    }
+}
+
+@media only screen and (max-width:345px){
+    .message .textarea{
+        width: 250px !important;
+    }
+
+    .formtext{
+        font-size: 15px !important;
+    }
+
+}
+
+
+
+
+@media only screen and (max-width:550px){
+    .foot{
+        flex-direction: column;
+    }
+}
